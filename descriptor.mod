@@ -1,0 +1,15 @@
+version="0.01 ALPHA"
+tags={
+	"Alternative History"
+	"Events"
+	"Gameplay"
+	"Graphics"
+	"Utilities"
+	"Technologies"
+	"National Focuses"
+	"Military"
+	"Map"
+	"Sound"
+}
+name="Frankreich"
+supported_version="1.10.3"
