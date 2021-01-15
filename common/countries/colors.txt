@@ -5,12 +5,12 @@ GER = {
 	color_ui = rgb { 138 155 116 }
 }
 ENG = {
-	color = rgb { 201 56 93 }
-	color_ui = rgb { 255 73 121 }
+	color = rgb { 161 80 80 }
+	color_ui = rgb { 161 80 80 }
 }
 SOV = {
-	color = rgb { 125 13 24 }
-	color_ui = rgb { 163 17 31 }
+	color = rgb { 199, 212, 200 }
+	color_ui = rgb { 199, 212, 200 }
 }
 SWE = {
 	color = rgb { 36 132 247 }
@@ -54,8 +54,8 @@ LAT = {
 	color_ui = rgb { 124 125 184 }
 }
 SPR = {
-	color = rgb { 242 205 94 }
-	color_ui = rgb { 255 255 122 }
+	color = rgb { 119 135 150 }
+	color_ui = rgb { 119 135 150 }
 }
 ITA = {
 	color = rgb { 67 127 63 }
