@@ -229,16 +229,16 @@ set_convoys = 300
 
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1932.5.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 64
-	fascism = 1
-	neutrality = 15
-	communism = 20
+	democratic = 5
+	fascism = 85
+	neutrality = 10
+	communism = 0
 }
 
 add_ideas = {
@@ -250,10 +250,6 @@ add_ideas = {
 	FRA_political_violence
 	FRA_inefficient_economy_2
 }
-
-give_guarantee = CZE
-give_guarantee = YUG
-give_guarantee = ROM
 
 #Order matters here Daladier will start as leaders because added last
 create_country_leader = {
@@ -290,9 +286,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Philippe Pétain"
-	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
-	picture = "Portrait_France_Philippe_Petain.dds"
+	name = "Jacques Doriot"
+	desc = "Testing!"
+	picture = "FRA_LEAD_Jacques_Doriot.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
