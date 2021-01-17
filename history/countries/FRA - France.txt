@@ -47,7 +47,9 @@ add_to_faction = GER
 add_to_faction = DEN
 add_to_faction = ITA
 add_to_faction = SPR
-
+add_to_faction = CZE
+add_to_faction = POL
+add_to_faction = HUN
 
 set_research_slots = 3
 set_stability = 0.5
