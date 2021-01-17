@@ -313,10 +313,6 @@ set_popularities = {
 	fascism = 95
 }
 
-create_faction = Axis
-add_to_faction = GER
-
-
 add_ideas = {
 	sour_loser
 	general_staff

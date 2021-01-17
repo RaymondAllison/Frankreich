@@ -11,37 +11,43 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = SPR
+		autonomous_state =  autonomy_frenchprotectorate
+	}
+	set_autonomy = {
+		target = ITA
+		autonomous_state =  autonomy_frenchprotectorate
+	}
+	set_autonomy = {
+		target = GER
+		autonomous_state =  autonomy_frenchprotectorate
+	}	
+	set_autonomy = {
+		target = ALG
+		autonomous_state =  autonomy_colony
+	}	
+	else = {
+		puppet = ITA
+		puppet = SPR
+		puppet = ALG
+		puppet = GER
+	}
+}
+
 create_faction = "French Diplomatic Union"
 add_to_faction = GER
 add_to_faction = DEN
 add_to_faction = ITA
 add_to_faction = SPR
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = GER
-		autonomous_state = french_protectorate
-	}
-	else = {
-		puppet = GER
-	}
-}
-
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = ITA
-		autonomous_state = french_protectorate
-	}
-	else = {
-		puppet = ITA
-	}
-}
 
 set_research_slots = 3
 set_stability = 0.5
