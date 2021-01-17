@@ -323,7 +323,8 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 100
+	democratic = 98
+	neutrality = 2
 }
 
 create_country_leader = {
