@@ -17,11 +17,13 @@
 	##########################################
 	######## |     MAIN FOCUSES     | ########
 	##########################################
+
+	#New World Order	
 	focus = {
 		id = new_world_order
 		icon = focus_gfe_new_world_order	
-	    x = 5
-		y = 2
+	    x = 15
+		y = 1
 		#relative_position_id = 
 
 		available = {
@@ -44,10 +46,11 @@
 		}
 	}
 	
+	#PLACEHOLDER
 	focus = {
 		id = status_of_our_empire
-		icon = GFX_goal_generic_more_territorial_claims
-	    x = 5
+		icon = GFX_focus_fra_devalue_the_franc
+	    x = 15
 		y = 3
 		#relative_position_id = new_world_order
 
@@ -72,9 +75,12 @@
 		ai_will_do = {
 		}
 	}
+
 	##########################################
 	######## | POLITICAL SUBSECTION | ########
 	##########################################
+
+	#PLACEHOLDER	
 	focus = {
 		id = the_rhineland
 		icon = GFX_goal_rhineland
@@ -104,6 +110,7 @@
 		}
 	}
 
+	#PLACEHOLDER
 	focus = {
 		id = wallonia_and_flanders
 		icon = GFX_goal_generic_forceful_treaty
@@ -137,6 +144,7 @@
 	######## |  MILITARY SUBSECTION | ########
 	##########################################
 	
+	#PLACEHOLDER
 	focus = {
 		id = french_military_conference
 		icon = GFX_goal_generic_position_armies
@@ -166,6 +174,7 @@
 		}
 	}
 
+	#PLACEHOLDER
 	focus = {
 		id = the_french_army
 		icon = GFX_goal_generic_army_artillery
@@ -196,6 +205,7 @@
 		}
 	}	
 
+	#PLACEHOLDER
 	focus = {
 		id = the_air_force
 		icon = GFX_goal_generic_air_doctrine
@@ -225,6 +235,7 @@
 		}
 	}
 
+	#PLACEHOLDER
 	focus = {
 		id = the_french_navy
 		icon = GFX_goal_generic_navy_battleship
