@@ -13,6 +13,7 @@
 	default = no
 	
 	continuous_focus_position = { x = 50 y = 1000 }
+	
 	##########################################
 	######## |     MAIN FOCUSES     | ########
 	##########################################
@@ -30,7 +31,6 @@
 		}
 
 		cost = 5
-		prerequisite = { focus = }
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -253,3 +253,4 @@
 		ai_will_do = {
 		}
 	}
+}

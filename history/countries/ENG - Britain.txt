@@ -447,17 +447,6 @@ create_country_leader = {
 	}
 }
 
-#create_country_leader = {
-#	name = "Rajani Palme Dutt"
-#	desc = "POLITICS_PALME_DUTT_DESC"
-#	picture = "Portrait_Britain_Palme_Dutt.dds"
-#	expire = "1965.1.1"
-#	ideology = leninism
-#	traits = {
-#		
-#	}
-#}
-
 create_field_marshal = {
 	name = "Alan Brooke" # Aristocrat
 	id = 997
