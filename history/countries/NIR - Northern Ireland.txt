@@ -55,15 +55,26 @@ set_convoys = 10
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
+	
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1933.1.24"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 10
+		neutrality= 90
+	}
+
+	create_country_leader = {
+		name = "Ulster Home Council"
+		desc = ""
+		picture = "ULSTER_HOME_COUNCIL.dds"
+		expire = "1966.1.1"
+		ideology = despotism
+		traits = {
+		}
+	}
 }
 
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1933.1.24"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	democratic = 20
-	neutrality= 80
-}
