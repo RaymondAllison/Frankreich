@@ -34,11 +34,16 @@ if = {
 		target = ALG
 		autonomous_state =  autonomy_colony
 	}	
+	set_autonomy = {
+		target = DEN
+		autonomous_state =  autonomy_colony
+	}	
 	else = {
 		puppet = ITA
 		puppet = SPR
 		puppet = ALG
 		puppet = GER
+		puppet = DEN
 	}
 }
 
