@@ -1,7 +1,7 @@
 #reload countrycolors
 
 GER = {
-	color = rgb { 71 79 99 }
+	color = rgb { 70 78 97 }
 	color_ui = rgb { 71 79 99 }
 }
 ENG = {
