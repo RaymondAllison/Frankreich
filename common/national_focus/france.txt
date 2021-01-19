@@ -1,5 +1,6 @@
-﻿#       SYNTAX DESIGN BY:  MERRYWEATHER     #
-#-------------------------------------------#
+﻿	#----------------------------------------#
+    #     SYNTAX DESIGN BY: MERRYWEATHER     #
+    #----------------------------------------#
 
 focus_tree = {
 	id = gfe_focus
