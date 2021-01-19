@@ -14,3 +14,5 @@
 - tech:
 - focus:
 - mapping:
+- project/wip:
+- enhancement:
