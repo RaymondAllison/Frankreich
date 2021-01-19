@@ -1,4 +1,7 @@
-﻿focus_tree = {
+﻿#       SYNTAX DESIGN BY:  MERRYWEATHER     #
+#-------------------------------------------#
+
+focus_tree = {
 	id = gfe_focus
 	
 	country = {
@@ -13,11 +16,15 @@
 	default = no
 	
 	continuous_focus_position = { x = 50 y = 1000 }
+
+	#----------------------------------------#
 	
 	##########################################
-	######## |     MAIN FOCUSES     | ########
+	######## |   ENTERING FOCUSES   | ########
 	##########################################
-
+	
+    #----------------------------------------#
+	
 	#New World Order	
 	focus = {
 		id = new_world_order
@@ -46,10 +53,10 @@
 		}
 	}
 	
-	#PLACEHOLDER
+	#The Future Successors
 	focus = {
-		id = status_of_our_empire
-		icon = GFX_focus_fra_devalue_the_franc
+		id = the_future_successors
+		icon = GFX_focus_fra_french_union
 	    x = 15
 		y = 3
 		#relative_position_id = new_world_order
@@ -76,17 +83,31 @@
 		}
 	}
 
+	#----------------------------------------#
+		
 	##########################################
 	######## | POLITICAL SUBSECTION | ########
 	##########################################
 
-	#PLACEHOLDER	
+	#----------------------------------------#	
+
+	#Are you nervous? We rehearsed this line for line.....
+
+	##Five Way Focuses
+
+	#Philippe Petain
+	#Marcel Bucard 
+	#Victor Borthelemy
+	#Marcel Deat
+	#Pierre Sidos
+
+	#Philippe Petain
 	focus = {
-		id = the_rhineland
-		icon = GFX_goal_rhineland
+		id = philippe_petain
+		icon = GFX_goal_generic_military_deal
 	    x = 6
 		y = 4
-		#relative_position_id = status_of_our_empire
+		#relative_position_id = the_future_successors
 
 		available = {
 
@@ -96,27 +117,27 @@
 		}
 
 		cost = 10
-		prerequisite = { focus = status_of_our_empire}
+		prerequisite = { focus = the_future_successors}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 150
+
 		}
 
 		ai_will_do = {
 		}
 	}
 
-	#PLACEHOLDER
+	#Marcel Bucard 
 	focus = {
-		id = wallonia_and_flanders
+		id = marcel_bucard
 		icon = GFX_goal_generic_forceful_treaty
-	    x = 4
+	    x = 10
 		y = 4
-		#relative_position_id = status_of_our_empire
+		#relative_position_id = the_future_successors
 
 		available = {
 
@@ -126,7 +147,7 @@
 		}
 
 		cost = 10
-		prerequisite = { focus = status_of_our_empire}
+		prerequisite = { focus = the_future_successors}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -140,17 +161,13 @@
 		}
 	}
 
-	##########################################
-	######## |  MILITARY SUBSECTION | ########
-	##########################################
-	
-	#PLACEHOLDER
+	#Victor Borthelemy
 	focus = {
-		id = french_military_conference
+		id = victor_borthelemy
 		icon = GFX_goal_generic_position_armies
-	    x = 10
+		x = 15
 		y = 4
-		#relative_position_id = status_of_our_empire
+		#relative_position_id = the_future_successors
 
 		available = {
 
@@ -160,7 +177,7 @@
 		}
 
 		cost = 10
-		prerequisite = { focus = status_of_our_empire}
+		prerequisite = { focus = the_future_successors}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -172,15 +189,15 @@
 
 		ai_will_do = {
 		}
-	}
+}
 
-	#PLACEHOLDER
+	#Marcel Deat
 	focus = {
-		id = the_french_army
+		id = marcel_deat
 		icon = GFX_goal_generic_army_artillery
-	    x = 10
-		y = 5
-		#relative_position_id = french_military_conference
+	    x = 20
+		y = 4
+		#relative_position_id = the_future_successors
 
 		available = {
 
@@ -190,7 +207,7 @@
 		}
 
 		cost = 10
-		prerequisite = { focus = french_military_conference}
+		prerequisite = { focus = the_future_successors}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -205,13 +222,13 @@
 		}
 	}	
 
-	#PLACEHOLDER
+	#Pierre Sidos
 	focus = {
-		id = the_air_force
+		id = pierre_sidos
 		icon = GFX_goal_generic_air_doctrine
-	    x = 8
-		y = 5
-		#relative_position_id = french_military_conference
+	    x = 25
+		y = 4
+		#relative_position_id = the_future_successors
 
 		available = {
 
@@ -221,7 +238,7 @@
 		}
 
 		cost = 10
-		prerequisite = { focus = french_military_conference}
+		prerequisite = { focus = the_future_successors}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -235,33 +252,40 @@
 		}
 	}
 
-	#PLACEHOLDER
-	focus = {
-		id = the_french_navy
-		icon = GFX_goal_generic_navy_battleship
-	    x = 12
-		y = 5
-		#relative_position_id = french_military_conference
+	##########################################
+	######## |  MILITARY SUBSECTION | ########
+	##########################################
 
-		available = {
-
-		}
-		bypass = {
-
-		}
-
-		cost = 10
-		prerequisite = { focus = french_military_conference}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			navy_experience = 25
-		}
-
-		ai_will_do = {
-		}
-	}
 }
+
+# Attention! This is a Template Reference #
+# --------------------------------------- #
+
+#focus = {
+#	id = id_here
+#	icon = GFX_here
+#	y = 0
+#	#relative_position_id = relative_id_here
+#
+#	available = {
+#
+#	}
+#	bypass = {
+#
+#	}
+#
+#	cost = 0
+#	prerequisite = { focus = prerequisite_here}
+#
+#	cancel_if_invalid = yes
+#	continue_if_invalid = no
+#	available_if_capitulated = no
+#
+#	completion_reward = {
+#		reward_here
+#	}
+#
+#	ai_will_do = {
+#	ai_does_stuff_here
+#	}
+#}
