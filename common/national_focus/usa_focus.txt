@@ -1,0 +1,161 @@
+focus_tree = {
+	id = usa_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+	
+	##########################################
+	######## |     MAIN FOCUS     | ########
+	##########################################
+
+	#Assessing the Situation
+	focus = {
+		id = assessing_the_situation
+		icon = GFX_focus_usa_build_the_pentagon
+	    x = 20
+		y = 1
+		#relative_position_id = 
+
+		available = {
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 75
+			
+			country_event = usa.31
+		}
+
+		ai_will_do = {
+
+		}
+	}
+	
+	##THREE PRONGED FOCUS TREES
+
+	#Make Bonding Time for our Allies
+	#Help Out McArthur
+	#Deal with the Radicals Within Our Border
+
+	#Make Bonding Time for our Allies
+	focus = {
+		id = make_bonding_time_for_our_allies
+		icon = GFX_focus_chi_mission_to_the_us
+	    x = 20
+		y = 3
+		
+		#relative_position_id = assessing_the_situation
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = assessing_the_situation}
+
+		cost = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 200
+		}
+
+		ai_will_do = {
+		}
+	}
+
+	#Help Out McArthur
+	focus = {
+		id = help_out_mcarthur
+		icon = GFX_focus_generic_military_academy
+	    x = 25
+		y = 3
+		
+		#relative_position_id = assessing_the_situation
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = assessing_the_situation}
+
+		cost = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 200
+		}
+
+		ai_will_do = {
+		}
+	}
+
+	#Deal with the Radicals Within Our Border
+	focus = {
+		id = deal_with_the_radicals_within_our_border
+		icon = GFX_focus_generic_strike_at_democracy1
+	    x = 15
+		y = 3
+		
+		#relative_position_id = assessing_the_situation
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = assessing_the_situation}
+
+		cost = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 200
+		}
+
+		ai_will_do = {
+		}
+	}
+
+	##########################################
+	######## | POLITICAL SUBSECTION | ########
+	##########################################
+
+
+
+	##########################################
+	######## |  MILITARY SUBSECTION | ########
+	##########################################
+	
+}
