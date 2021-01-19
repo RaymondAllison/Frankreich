@@ -19,4 +19,4 @@ jobs:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
 
 Mapping:
-  - localization/**/*
+  - localization/*
