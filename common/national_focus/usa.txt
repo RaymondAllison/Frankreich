@@ -1,3 +1,5 @@
+#UNITED STATES FOCUS TREE - ASSIGNEE: MILITARYMODIFIER
+
 focus_tree = {
 	id = usa_focus
 	
@@ -54,72 +56,14 @@ focus_tree = {
 	#Help Out McArthur
 	#Deal with the Radicals Within Our Border
 
-	#Make Bonding Time for our Allies
+	##########################################
+	###### |  BONDING TIME FOCUSES   | #######
+	##########################################
+
+	# MASTER - Make Bonding Time for our Allies
 	focus = {
 		id = make_bonding_time_for_our_allies
 		icon = GFX_focus_chi_mission_to_the_us
-	    x = 20
-		y = 3
-		
-		#relative_position_id = assessing_the_situation
-
-		available = {
-
-		}
-		bypass = {
-
-		}
-		prerequisite = { focus = assessing_the_situation}
-
-		cost = 3
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 200
-		}
-
-		ai_will_do = {
-		}
-	}
-
-	#Help Out McArthur
-	focus = {
-		id = help_out_mcarthur
-		icon = GFX_focus_generic_military_academy
-	    x = 25
-		y = 3
-		
-		#relative_position_id = assessing_the_situation
-
-		available = {
-
-		}
-		bypass = {
-
-		}
-		prerequisite = { focus = assessing_the_situation}
-
-		cost = 3
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 200
-		}
-
-		ai_will_do = {
-		}
-	}
-
-	#Deal with the Radicals Within Our Border
-	focus = {
-		id = deal_with_the_radicals_within_our_border
-		icon = GFX_focus_generic_strike_at_democracy1
 	    x = 15
 		y = 3
 		
@@ -147,8 +91,267 @@ focus_tree = {
 		}
 	}
 
+	# TRIBUTARY - Talk With the French Paliamentarians
+	focus = {
+		id = talk_with_the_french_paliamentarians
+		icon = GFX_focus_chi_reach_out_to_france
+	    x = 14
+		y = 4
+		
+		#relative_position_id = make_bonding_time_for_our_allies
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = make_bonding_time_for_our_allies}
+
+		cost = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 200
+		}
+
+		ai_will_do = {
+		}
+	}
+
+	# TRIBUTARY - Call Up Ottawa
+	focus = {
+		id = call_up_ottawa
+		icon = GFX_focus_generic_monarchy_1
+	    x = 16
+		y = 4
+		
+		#relative_position_id = make_bonding_time_for_our_allies
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = make_bonding_time_for_our_allies}
+
+		cost = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 200
+		}
+
+		ai_will_do = {
+		}
+	}
+
+	# BREAKOFF - Look for More Allies
+	focus = {
+		id = look_for_more_allies
+		icon = GFX_focus_usa_focus_on_europe
+	    x = 15
+		y = 5
+		
+		#relative_position_id = talk_with_the_french_paliamentarians
+		#relative_position_id = call_up_ottawa
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = talk_with_the_french_paliamentarians}
+		prerequisite = { focus = call_up_ottawa}
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		}
+	}
+
 	##########################################
-	######## | POLITICAL SUBSECTION | ########
+	###### | HELP MCARTHUR - FOCUSES | #######
+	##########################################
+
+	# MASTER - Help Out McArthur
+	focus = {
+		id = help_out_mcarthur
+		icon = GFX_focus_generic_military_academy
+	    x = 20
+		y = 3
+		
+		#relative_position_id = assessing_the_situation
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = assessing_the_situation}
+
+		cost = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 200
+		}
+
+		ai_will_do = {
+		}
+	}
+
+	# TRIBUTARY - Send Military Equipment to Japan
+	focus = {
+		id = send_military_equipment_to_japan
+		icon = GFX_focus_focus_fra_maquis
+	    x = 19
+		y = 4
+		
+		#relative_position_id = help_out_mcarthur
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = help_out_mcarthur}
+
+		cost = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 200
+		}
+
+		ai_will_do = {
+		}
+	}
+
+	# TRIBUTARY - Fund the Liberal Democratic Party
+	focus = {
+		id = fund_the_liberal_democratic_party
+		icon = GFX_focus_generic_monarchy_1
+	    x = 21
+		y = 4
+		
+		#relative_position_id = make_bonding_time_for_our_allies
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = help_out_mcarthur}
+
+		cost = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 200
+		}
+
+		ai_will_do = {
+		}
+	}
+
+	# BREAKOFF - Put Down the Rebels
+	focus = {
+		id = look_for_more_allies
+		icon = GFX_focus_usa_focus_on_europe
+	    x = 15
+		y = 5
+		
+		#relative_position_id = talk_with_the_french_paliamentarians
+		#relative_position_id = call_up_ottawa
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = talk_with_the_french_paliamentarians}
+		prerequisite = { focus = call_up_ottawa}
+		cost = 10
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		}
+	}
+
+	##########################################
+	##### | DEAL WITH RADICALS FOCUSES | #####
+	##########################################
+
+	# MASTER - Deal with the Radicals Within Our Border
+	focus = {
+		id = deal_with_the_radicals_within_our_border
+		icon = GFX_focus_generic_strike_at_democracy1
+	    x = 25
+		y = 3
+		
+		#relative_position_id = assessing_the_situation
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = assessing_the_situation}
+
+		cost = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 200
+		}
+
+		ai_will_do = {
+		}
+	}
+
+
+	##########################################
+	######## | INDUSTRIALSUBSECTION | ########
 	##########################################
 
 
@@ -158,3 +361,32 @@ focus_tree = {
 	##########################################
 	
 }
+
+#focus = {
+#	id = id_here
+#	icon = GFX_here
+#	y = 0
+#	#relative_position_id = relative_id_here
+#
+#	available = {
+#
+#	}
+#	bypass = {
+#
+#	}
+#
+#	cost = 0
+#	prerequisite = { focus = prerequisite_here}
+#
+#	cancel_if_invalid = yes
+#	continue_if_invalid = no
+#	available_if_capitulated = no
+#
+#	completion_reward = {
+#		reward_here
+#	}
+#
+#	ai_will_do = {
+#	ai_does_stuff_here
+#	}
+#}

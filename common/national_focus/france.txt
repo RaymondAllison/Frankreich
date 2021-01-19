@@ -1,6 +1,4 @@
-﻿	#----------------------------------------#
-    #     SYNTAX DESIGN BY: MERRYWEATHER     #
-    #----------------------------------------#
+﻿#FRENCH FOCUS TREE - ASSIGNEE: NIERLYDYING
 
 focus_tree = {
 	id = gfe_focus
@@ -156,6 +154,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 30
+			add_war_support = 0.1
 		}
 
 		ai_will_do = {
