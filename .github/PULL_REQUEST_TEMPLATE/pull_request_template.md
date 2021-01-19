@@ -9,7 +9,6 @@
 - fix:
 - bug:
 - refractor:
-- gfx:
 - model:
 - tech:
 - focus:
