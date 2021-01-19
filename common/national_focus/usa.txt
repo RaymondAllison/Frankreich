@@ -15,7 +15,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1000 }
 	
 	##########################################
-	######## |     MAIN FOCUS     | ########
+	######## |     MAIN FOCUS      |  ########
 	##########################################
 
 	#Assessing the Situation
