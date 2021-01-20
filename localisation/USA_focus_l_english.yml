@@ -1,9 +1,34 @@
 ﻿l_english:
  assessing_the_situation:0 "Assessing the Situation"
- assessing_the_situation_desc:0 "This is a test."
- deal_with_the_radicals_within_our_border:0 "Deal With the Radicals Within our Border"
+  assessing_the_situation_desc:0 "It's about time we assess what has been going on in the world in the past few decades and our place in the world. With the Germans winning the first world war, the French conquering all of Europe, and with almost all democratic nations falling to fascism, we should get a report to the President and Vice President about where we stand at the current moment..." 
+
  make_bonding_time_for_our_allies:0 "Make Bonding Time for our Allies"
- help_out_mcarthur:0 "Help Out McArthur"
- talk_with_the_french_paliamentarians:0 "Talk With the French Paliamentarians"
- call_up_ottawa:0 "Call Up Ottawa"
- look_for_more_allies:0 "Look for More Allies"
+   make_bonding_time_for_our_allies_desc:0 "Our allies are far and few between, we need to keep them on good terms or we have no chance of defeating France. We need to pursue closer ties with them to make sure none of them fall to the Frankish Regime."
+
+  talk_with_the_french_paliamentarians:0 "Talk With the French Paliamentarians"
+    talk_with_the_french_paliamentarians_desc:0 "The exiled French parliament, undersupplied, underdefended, and almost completely isolated. Let's have a chat with them and see what we can do to help them."
+
+  call_up_ottawa:0 "Call Up Ottawa"
+    call_up_ottawa_desc:0 "The British government in exile have been our closest ally since the fall of Europe. Let's see if they need any of our help."
+
+  look_for_more_allies:0 "Look for More Allies"
+    look_for_more_allies_desc:0 "Now that we have dealt with our allies we should look for new ones. The French have the most powerful empire the world has ever seen, while we have Canada and Guiana and part of the former Commonwealth. We may be good allies, but they not strong enough to help us beat the French. We should gather a list of possible countries that can help us against the French."
+
+ help_out_mcarthur:0 "Help Out MacArthur"
+   help_out_mcarthur_desc:0 "After the war, Japan was rocked by many firebombings, and nuclear strikes which led to the occupation of Japan by MacArthur. MacArthur is going to need some help keeping Japan from falling to the radicals. I think some military aid and some political influence are in order."
+
+  send_military_equipment_to_japan:0 "Send Military Equipment to Japan"
+   send_military_equipment_to_japan_desc:0 "Firearms will be needed to continue to pacify the Japanese population as more military police and garrison troops are sent to the country. With terrorists and influencers sent in from around the world, we will need to keep a healthy political presence as well."
+
+  fund_the_liberal_democratic_party:0 "Fund the Liberal Democratic Party"
+   fund_the_liberal_democratic_party_desc:0 "The Liberal Democratic party has only been in the process of forming for a few years now. Giving them some money to fund their campaigns could boost their popularity in the next election."
+
+  put_down_the_rebels:0 "Put Down the Rebels"
+   put_down_the_rebels_desc:0 "Now that we gave MacArthur some equipment and helped the LDP, it's high time we send in the troops. MacArthur has been whining about it since he was put in charge, Let's make sure the Japs know that they will never go back to the ways of the old."
+
+ deal_with_the_radicals_within_our_border:0 "Deal With the Radicals Within our Border"
+  send_spies_to_afp_and_dsp_meetings:0 "Send Spies to AFP and DSP Meetings" 
+  declare_the_klan_as_a_terrorist_organization:0 "Declare the Klan as a Terrorist Organization"
+ prepare_for_the_next_election:0 "Prepare for the Next Election" 
+
+  ask_the_democrats_for_a_grand_coalition:0 "Ask the Democrats for a Grand Coalition"

@@ -36,13 +36,47 @@ focus_tree = {
 
 		cost = 5
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
 		completion_reward = {
 			add_political_power = 75
 			country_event = usa.31
+			add_stability = 0.10
+			add_command_power = 25
+
+			random_owned_controlled_state = {
+				limit {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	  
+				
+			}
+
+			random_owned_controlled_state = {
+				limit {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	  
+				
+			}
 		}
 
 		ai_will_do = {
@@ -65,7 +99,7 @@ focus_tree = {
 		id = make_bonding_time_for_our_allies
 		icon = GFX_focus_chi_mission_to_the_us
 	    x = 15
-		y = 3
+		y = 2
 		
 		#relative_position_id = assessing_the_situation
 
@@ -96,7 +130,7 @@ focus_tree = {
 		id = talk_with_the_french_paliamentarians
 		icon = GFX_focus_chi_reach_out_to_france
 	    x = 14
-		y = 4
+		y = 3
 		
 		#relative_position_id = make_bonding_time_for_our_allies
 
@@ -127,7 +161,7 @@ focus_tree = {
 		id = call_up_ottawa
 		icon = GFX_focus_generic_monarchy_1
 	    x = 16
-		y = 4
+		y = 3
 		
 		#relative_position_id = make_bonding_time_for_our_allies
 
@@ -158,7 +192,7 @@ focus_tree = {
 		id = look_for_more_allies
 		icon = GFX_focus_usa_focus_on_europe
 	    x = 15
-		y = 5
+		y = 4
 		
 		#relative_position_id = talk_with_the_french_paliamentarians
 		#relative_position_id = call_up_ottawa
@@ -194,7 +228,7 @@ focus_tree = {
 		id = help_out_mcarthur
 		icon = GFX_focus_generic_military_academy
 	    x = 20
-		y = 3
+		y = 2
 		
 		#relative_position_id = assessing_the_situation
 
@@ -225,7 +259,7 @@ focus_tree = {
 		id = send_military_equipment_to_japan
 		icon = GFX_focus_focus_fra_maquis
 	    x = 19
-		y = 4
+		y = 3
 		
 		#relative_position_id = help_out_mcarthur
 
@@ -256,7 +290,7 @@ focus_tree = {
 		id = fund_the_liberal_democratic_party
 		icon = GFX_focus_generic_monarchy_1
 	    x = 21
-		y = 4
+		y = 3
 		
 		#relative_position_id = make_bonding_time_for_our_allies
 
@@ -284,10 +318,10 @@ focus_tree = {
 
 	# BREAKOFF - Put Down the Rebels
 	focus = {
-		id = look_for_more_allies
-		icon = GFX_focus_usa_focus_on_europe
-	    x = 15
-		y = 5
+		id = put_down_the_rebels
+		icon = GFX_focus_usa_recruit_the_free_corps
+	    x = 20
+		y = 4
 		
 		#relative_position_id = talk_with_the_french_paliamentarians
 		#relative_position_id = call_up_ottawa
@@ -298,13 +332,9 @@ focus_tree = {
 		bypass = {
 
 		}
-		prerequisite = { focus = talk_with_the_french_paliamentarians}
-		prerequisite = { focus = call_up_ottawa}
+		prerequisite = { focus = send_military_equipment_to_japan}
+		prerequisite = { focus = fund_the_liberal_democratic_party}
 		cost = 10
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
 
 		completion_reward = {
 
@@ -323,7 +353,7 @@ focus_tree = {
 		id = deal_with_the_radicals_within_our_border
 		icon = GFX_focus_generic_strike_at_democracy1
 	    x = 25
-		y = 3
+		y = 2
 		
 		#relative_position_id = assessing_the_situation
 
@@ -349,6 +379,125 @@ focus_tree = {
 		}
 	}
 
+	# TRIBUTARY - Send Spies to AFP and DSP Meetings
+	focus = {
+		id = send_spies_to_afp_and_dsp_meetings
+		icon = GFX_focus_generic_military_mission
+	    x = 24
+		y = 3
+		
+		#relative_position_id = deal_with_the_radicals_within_our_border
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = deal_with_the_radicals_within_our_border}
+
+		cost = 3
+
+		completion_reward = {
+			add_political_power = 200
+		}
+
+		ai_will_do = {
+		}
+	}
+
+	# TRIBUTARY - Declare the Klan as a Terrorist Organization
+	focus = {
+		id = declare_the_klan_as_a_terrorist_organization
+		icon = GFX_focus_por_workers_of_iberia
+	    x = 26
+		y = 3
+		
+		#relative_position_id = deal_with_the_radicals_within_our_border
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = deal_with_the_radicals_within_our_border}
+
+		cost = 3
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 200
+		}
+
+		ai_will_do = {
+		}
+	}
+
+	# BREAKOFF - Prepare for the Next Election
+	focus = {
+		id = prepare_for_the_next_election
+		icon = GFX_focus_usa_voter_registration_act
+	    x = 25
+		y = 4
+		
+		#relative_position_id = send_spies_to_afp_and_dsp_meetings
+		#relative_position_id = ask_the_democrats_for_a_grand_coalition
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = send_spies_to_afp_and_dsp_meetings}
+		prerequisite = { focus = declare_the_klan_as_a_terrorist_organization}
+		cost = 10
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		}
+	}
+
+	##########################################
+	##### | BRIDGING THE GAP - FOCUSES | #####
+	##########################################
+
+	# BREAKOFF X3 - ???
+	focus = {
+		id = ask_the_democrats_for_a_grand_coalition
+		icon = GFX_focus_generic_support_the_left_right
+	    x = 20
+		y = 5
+		
+		#relative_position_id = send_spies_to_afp_and_dsp_meetings
+		#relative_position_id = ask_the_democrats_for_a_grand_coalition
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+		prerequisite = { focus = look_for_more_allies}
+		prerequisite = { focus = put_down_the_rebels}
+		prerequisite = { focus = prepare_for_the_next_election}
+
+		cost = 10
+
+		completion_reward = {
+
+		}
+
+		ai_will_do = {
+		}
+	}
 
 	##########################################
 	######## | INDUSTRIALSUBSECTION | ########
