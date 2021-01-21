@@ -372,9 +372,9 @@ ICE = {
 	color_ui = rgb { 100  125  175 }
 }
 
-UKR = {
-	color = rgb { 0  80  230 }
-	color_ui = rgb { 0  80  230 }	
+UKR = { 
+	color = rgb { 55  0  255 }
+	color_ui = rgb { 55  0  255 }	
 }
 
 AZR = {
@@ -423,8 +423,8 @@ MNT = {
 }
 
 BLR = {
-	color = rgb { 180 220 190 }
-	color_ui = rgb { 180 220 190 }
+    color = RGB { 70 35 170 }
+    color_ui = RGB { 70 35 170 }
 }
 MAN = {
 	color = rgb { 255 120 71 }
